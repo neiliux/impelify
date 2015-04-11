@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Impelify</title>
+    <script data-main="app" src="/bower_components/requirejs/require.js" type="text/javascript" async></script>
+    <style>
+    .anim
+    {
+    	-webkit-animation: flash 1s ease 3;
+    	-moz-animation: flash 1s ease 3;
+    	-ms-animation: flash 1s ease 3;
+    	-o-animation: flash 1s ease 3;
+    	animation: flash 1s ease 3;
+
+        bakground-color: blue;
+    }
+
+    /* animation */
+    @-webkit-keyframes flash {
+    	50% { opacity: 0; }
+    }
+
+    @-moz-keyframes flash {
+    	50% { opacity: 0; }
+    }
+
+    @-ms-keyframes flash {
+    	50% { opacity: 0; }
+    }
+
+    @-o-keyframes flash {
+    	50% { opacity: 0; }
+    }
+
+    @keyframes flash {
+    	50% { opacity: 0; }
+    }
+
+    @keyframes flash {
+        100% { opacity: 1; }
+    }
+    </style>
+</head>
+<body data-ng-controller="sandboxController">
+    <div class="animContainer" data-impelify data-on-start="start" data-on-end="end">
+        <span>I am content</span>
+    </div>
+    <div data-ng-show="show">
+        COMPLETE!
+    </div>
+</body>
+</html>

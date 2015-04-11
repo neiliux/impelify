@@ -1,0 +1,31 @@
+{
+  "name": "Impelify",
+  "version": "0.0.1",
+  "homepage": "https://github.com/neiliux/impelify",
+  "authors": [
+    "Neil Breeden III (neil@htmlbuffet.com)"
+  ],
+  "moduleType": [
+    "amd",
+    "globals"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "angular": "~1.3.14",
+    "underscore": "~1.8.2",
+    "jquery": "~2.1.3",
+    "jasmine": "~2.2.1",
+    "chai": "~2.1.1",
+    "chai-jquery": "~2.0.0",
+    "requirejs": "~2.1.16"
+  },
+  "dependencies": {}
+}

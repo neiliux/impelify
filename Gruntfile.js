@@ -1,8 +1,6 @@
 module.exports = function (grunt) {
     'use strict';
-    grunt.loadNpmTasks('grunt-contrib-jshint');
-    grunt.loadNpmTasks('grunt-karma');
-    grunt.loadNpmTasks('grunt-devserver');
+
     grunt.initConfig({
         devserver: {
             server: {},
@@ -20,15 +18,41 @@ module.exports = function (grunt) {
                 'src/**/*.js',
                 'test/**/*.js'
             ]
+        },
+        requirejs: {
+            compile: {
+                options: {
+                    baseUrl: '',
+                    paths: {
+                        angular: 'bower_components/angular/angular',
+                    },
+                    out: 'lib/impelify.js',
+                    include: ['src/impelifyModule'],
+                    exclude: ['angular']
+                }
+            }
         }
     });
+
+    grunt.loadNpmTasks('grunt-contrib-jshint');
+    grunt.loadNpmTasks('grunt-karma');
+    grunt.loadNpmTasks('grunt-devserver');
+    grunt.loadNpmTasks('grunt-contrib-requirejs');
+
     grunt.registerTask('default', [
         'jshint',
         'karma'
     ]);
+
     grunt.registerTask('dev', [
         'jshint',
         'karma',
         'devserver'
+    ]);
+
+    grunt.registerTask('prod', [
+        'jshint',
+        'karma',
+       'requirejs'
     ]);
 };

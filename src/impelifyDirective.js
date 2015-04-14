@@ -1,5 +1,3 @@
-/*global console, alert, setTimeout */
-
 define([], function() {
     function attachEvents(element, type, callback) {
         var pfx = ["webkit", "moz", "MS", "o", ""];

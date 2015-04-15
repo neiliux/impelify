@@ -24,10 +24,10 @@ module.exports = function (grunt) {
                 options: {
                     baseUrl: '',
                     paths: {
-                        angular: 'bower_components/angular/angular',
+                        angular: 'bower_components/angular/angular'
                     },
                     out: 'lib/impelify.js',
-                    include: ['src/impelifyModule'],
+                    include: ['src/impelify'],
                     exclude: ['angular']
                 }
             }

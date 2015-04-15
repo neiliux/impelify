@@ -11,6 +11,7 @@
         "module": true,
         "define": true,
         "describe": true,
-        "it": true
+        "it": true,
+        "angular": true
     }
 }

@@ -1,25 +1,7 @@
-/*global angular */
+var moduleName = 'impelifyModule',
+    impelifyModule = angular.module(moduleName, []);
 
-//define(['angular', 'src/impelifyDirective'], function(angular, impelifyDirective) {
-//    var moduleName = 'impelifyModule',
-//        module = angular.module(moduleName, []);
-//
-//    module.directive(impelifyDirective.$name, impelifyDirective);
-//
-//    module.bootstrap = function () {
-//        angular.element(document).ready(function () {
-//            angular.bootstrap(document, [moduleName]);
-//        });
-//    };
-//
-//    return module;
-//});
-
-var moduleName = 'impelifyModule';
-
-var impelifyModule = angular.module(moduleName, []);
-
-impelifyModule.directive('impelify',function() {
+impelifyModule.directive('impelify', function() {
     function attachEvents(element, type, callback) {
         var pfx = ["webkit", "moz", "MS", "o", ""];
 

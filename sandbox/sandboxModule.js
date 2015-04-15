@@ -1,7 +1,7 @@
 define([
     'angular',
     'sandbox/sandboxController',
-    'src/impelifyModule'],
+    'src/impelify'],
     function(angular, sandboxController) {
         var moduleName = 'sandbox',
             module = angular.module(moduleName, ['impelifyModule']);
